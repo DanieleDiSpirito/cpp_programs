@@ -1,0 +1,42 @@
+#include <windows.h>
+#include "resources.h"
+
+IDI_MAIN_ICON    ICON   "Tetris.ico"
+
+IDB_BLOCK_BLUE   BITMAP "Tetris_Blue.bmp"
+IDB_BLOCK_CYAN   BITMAP "Tetris_Cyan.bmp"
+IDB_BLOCK_GRAY   BITMAP "Tetris_Gray.bmp"
+IDB_BLOCK_GREEN  BITMAP "Tetris_Green.bmp"
+IDB_BLOCK_RED    BITMAP "Tetris_Red.bmp"
+IDB_BLOCK_VIOLET BITMAP "Tetris_Violet.bmp"
+IDB_BLOCK_YELLOW BITMAP "Tetris_Yellow.bmp"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0 //Versinone file
+PRODUCTVERSION  1,0,0,0 //Versione prodotto
+FILEOS          VOS_NT_WINDOWS32 //Sistema operativo, in questo caso ogni computer Windows NT 32-bit
+FILETYPE        VFT_APP //Tipo di file (applicazione, dll, driver)
+FILESUBTYPE     VFT2_UNKNOWN //Sottotipo (solo per i driver)
+  BEGIN
+  BLOCK "StringFileInfo"
+    BEGIN
+    BLOCK "041004b0"   //La stringa si compone concatenando l'ID Lingua (0409 U.S: English, 0410 Italiano ecc..) e l'ID Charset
+      BEGIN
+      VALUE "Comments",         "0\0"                       //Comment0
+      VALUE "CompanyName",      "Alessio Serraino\0"        //Autore
+      VALUE "FileDescription",  "Tetris\0"                  //Descrizione
+      VALUE "FileVersion",      "1.0\0"                     //Versione del file
+      VALUE "InternalName",     "Tetris\0"                  //Sinceramente non so a che serva
+      VALUE "LegalCopyright",   "This is a free software\0" //Copyright
+      VALUE "LegalTrademarks",  "\0"                        //Marchio prodotto, stile X è un marchio registrato dell'azienda Y
+      VALUE "OriginalFilename", "tetris.exe\0"              //Nome originale
+      VALUE "ProductName",      "Tetris\0"                  //Nome prodotto
+      VALUE "ProductVersion",   "1.0\0"                     //Versione prodotto
+      END
+    END
+  BLOCK "VarFileInfo"
+    BEGIN
+      VALUE "Translation", 0x410, 0x4b0 //Lingua e Charset, 0x410 = italiano, 0x4b0 = Unicode
+    END
+  END
+

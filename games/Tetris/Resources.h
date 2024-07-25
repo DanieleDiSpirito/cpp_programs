@@ -1,0 +1,16 @@
+#ifndef RESOURCES_H_INCLUDED
+#define RESOURCES_H_INCLUDED
+
+#define IDB_BLOCK_RED     10001
+#define IDB_BLOCK_YELLOW  10002
+#define IDB_BLOCK_GREEN   10003
+#define IDB_BLOCK_CYAN    10004
+#define IDB_BLOCK_BLUE    10005
+#define IDB_BLOCK_VIOLET  10006
+#define IDB_BLOCK_GRAY    10007
+
+#define ID_GAME_TIMER     20001 //Identificatore del timer
+
+#define IDI_MAIN_ICON     1033
+
+#endif // RESOURCES_H_INCLUDED
